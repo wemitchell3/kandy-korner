@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class EmployeeList extends Component {
     render() {
         return (
+            <article className="content">
             <section className="employees">
                 <h1>
                     Our Employees
@@ -18,6 +19,7 @@ export default class EmployeeList extends Component {
                 )
             }
             </section>
+            </article>
         );
     }
 }

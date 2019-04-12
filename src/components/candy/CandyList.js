@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class CandyList extends Component {
     render() {
         return (
+            <article className="content">
             <section className="candies">
                 <h1>
                     Our Candies
@@ -15,6 +16,7 @@ export default class CandyList extends Component {
                 )
             }
             </section>
+            </article>
         );
     }
 }

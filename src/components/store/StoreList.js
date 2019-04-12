@@ -3,6 +3,7 @@ import React, { Component } from 'react'
 export default class StoreList extends Component {
     render() {
         return (
+            <article className="content">
             <section className="stores">
             <h1>
                 Our Stores
@@ -18,6 +19,7 @@ export default class StoreList extends Component {
                 )
             }
             </section>
+            </article>
         );
     }
 }
