@@ -24,17 +24,18 @@ export default class KandyKorner extends Component {
     candyTypeArray = [
       { id: 1, name: "Chocolate" },
       { id: 2, name: "Gummie" },
-      { id: 3, name: "Hard" },
-      { id: 4, name: "Chewy" }
+      { id: 3, name: "Hard Candy" },
+      { id: 4, name: "Chewy" },
+      { id: 5, name: "Gum" }
     ];
   
     candyArray = [
-      { id: 1, name: "Wonka Bar" },
-      { id: 2, name: "Big League Chew" },
-      { id: 3, name: "Gummie Bears" },
-      { id: 4, name: "Spree" },
-      { id: 5, name: "Butter Finger" },
-      { id: 6, name: "Snickers" }
+      { id: 1, name: "Wonka Bar", candyTypeId: 1 },
+      { id: 2, name: "Big League Chew", candyTypeId: 5 },
+      { id: 3, name: "Gummie Bears", candyTypeId: 2 },
+      { id: 4, name: "Spree", candyTypeId: 3 },
+      { id: 5, name: "Butter Finger", candyTypeId: 1 },
+      { id: 6, name: "Snickers", candyTypeId: 1 }
     ];
   
     state = {
@@ -54,7 +55,7 @@ export default class KandyKorner extends Component {
                     return <EmployeeList employees={this.state.employees} />
                 }} />
                 <Route path="/candies" render={(props) => {
-                    return <CandyList candies={this.state.candies} />
+                    return <CandyList candies={this.state.candies} candyTypes={this.state.candyTypes} />
                 }} />
             </React.Fragment>
         )

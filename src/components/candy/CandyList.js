@@ -12,6 +12,11 @@ export default class CandyList extends Component {
                 this.props.candies.map(candy =>
                     <div key={candy.id}>
                         {candy.name}
+                        {" "} is a type of {" "}
+                        {
+                            this.props.candyTypes.find(candyType => 
+                                candyType.id === candy.candyTypeId).name
+                        }
                     </div>
                 )
             }
