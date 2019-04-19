@@ -1,4 +1,7 @@
-import React, { Component } from 'react'
+import React, { Component } from "react"
+import { Link } from "react-router-dom"
+import candyIcon from "./candyIcon.png"
+import "./candy.css"
 
 export default class CandyList extends Component {
     render() {
@@ -11,20 +14,23 @@ export default class CandyList extends Component {
             {
                 this.props.candies.map(candy =>
                     <div key={candy.id}>
-                        {candy.name}
+                        <img src={candyIcon} className="icon--candy" alt="Candy Icon" />
+                        <Link className="nav-link" to={`/candies/${candy.id}`}>{candy.name}</Link>
                         {" "} is a type of {" "}
                         {
                             this.props.candyTypes.find(candyType => 
                                 candyType.id === candy.candyTypeId).name
                         }
-                        <button
+                        <p>
+                            <button
                                 onClick={() => this.props.deleteCandy(candy.id)}
                                 className="card-link">Discontinued</button>
+                        </p>
                     </div>
                 )
             }
             </section>
             </article>
-        );
+        )
     }
 }

@@ -1,0 +1,91 @@
+{
+    "stores": [
+      {
+        "id": 1,
+        "name": "Nashville North Store",
+        "address": "500 Circle Way"
+      },
+      {
+        "id": 2,
+        "name": "Nashville South Store",
+        "address": "10101 Binary Court"
+      }
+    ],
+    "employees": [
+      {
+        "id": 1,
+        "name": "Jessica Younker",
+        "number": "867-5309"
+      },
+      {
+        "id": 2,
+        "name": "Jordan Nelson",
+        "number": "867-5309"
+      },
+      {
+        "id": 3,
+        "name": "Zoe LeBlanc",
+        "number": "867-5309"
+      },
+      {
+        "id": 4,
+        "name": "Blaise Roberts",
+        "number": "867-5309"
+      }
+    ],
+    "candyTypes": [
+      {
+        "id": 1,
+        "name": "Chocolate"
+      },
+      {
+        "id": 2,
+        "name": "Gummie"
+      },
+      {
+        "id": 3,
+        "name": "Hard Candy"
+      },
+      {
+        "id": 4,
+        "name": "Chewy"
+      },
+      {
+        "id": 5,
+        "name": "Gum"
+      }
+    ],
+    "candies": [
+      {
+        "id": 1,
+        "name": "Wonka Bar",
+        "candyTypeId": 1
+      },
+      {
+        "id": 2,
+        "name": "Big League Chew",
+        "candyTypeId": 5
+      },
+      {
+        "id": 3,
+        "name": "Gummie Bears",
+        "candyTypeId": 2
+      },
+      {
+        "id": 4,
+        "name": "Spree",
+        "candyTypeId": 3
+      },
+      {
+        "id": 5,
+        "name": "Butter Finger",
+        "candyTypeId": 1
+      }
+      ,
+      {
+        "id": 6,
+        "name": "Snickers",
+        "candyTypeId": 1
+      }
+    ]
+  }
