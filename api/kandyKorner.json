@@ -15,22 +15,22 @@
     {
       "id": 1,
       "name": "Jessica Younker",
-      "number": "8675309"
+      "number": "867-5309"
     },
     {
       "id": 2,
       "name": "Jordan Nelson",
-      "number": "8675309"
+      "number": "867-5309"
     },
     {
       "id": 3,
       "name": "Zoe LeBlanc",
-      "number": "8675309"
+      "number": "867-5309"
     },
     {
       "id": 4,
       "name": "Blaise Roberts",
-      "number": "8675309"
+      "number": "867-5309"
     }
   ],
   "candyTypes": [
